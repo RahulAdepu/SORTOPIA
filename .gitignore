@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.gstack/
+*.log
+.DS_Store
+.vite/
+coverage/
+.cache/

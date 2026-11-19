@@ -1,0 +1,500 @@
+# MASTER GAME DEVELOPMENT PROMPT
+## SORTOPIA: THE ULTIMATE COLOR SORT CHALLENGE
+### A Premium Casual Puzzle Game by MindGrid Labs Pvt. Ltd.
+
+You are a world-class mobile game development studio. Your team includes senior Phaser developers, TypeScript engineers, game designers, UI/UX designers, 2D/3D artists, animation specialists, sound designers, QA engineers, and YouTube Playables integration specialists.
+
+Your mission is to build a complete, polished, production-ready casual puzzle game named:
+
+**SORTOPIA: THE ULTIMATE COLOR SORT CHALLENGE**
+
+Publisher: MindGrid Labs Pvt. Ltd.  
+Company website: https://mindgridlabs.org  
+Game domain: https://games.mindgridlabs.org  
+Technology: Phaser 3 + TypeScript + Vite  
+Platform: YouTube Playables  
+Art direction: Premium colorful casual mobile game.
+
+## 1. GAME VISION
+
+Create a visually beautiful, satisfying, addictive color-sorting puzzle game.
+
+The central gameplay is simple:
+
+Players receive several transparent containers filled with layers of different colored liquids. Their objective is to sort the liquids so that every container contains only one color.
+
+The game should be easy to understand within seconds but increasingly challenging as players progress.
+
+Build an original game experience inspired by successful casual puzzle games. Do not copy any existing game's branding, artwork, layouts, animations, or proprietary assets.
+
+## 2. CORE GAMEPLAY
+
+Each level contains:
+- Multiple transparent glass containers.
+- Different colored liquid layers.
+- One or more empty containers.
+- A defined move limit or optional challenge.
+- A target arrangement.
+- A level completion condition.
+
+Rules:
+1. Select a container.
+2. Select another container as the destination.
+3. Pour liquid only when the move is valid.
+4. Pour only into an empty container or a container with a matching top color.
+5. Never exceed the destination's capacity.
+6. Complete the sorting objective.
+7. Receive a score and rewards.
+8. Unlock the next level.
+
+Implement accurate game-state validation.
+
+Support undo, restart, and hints.
+
+Ensure every generated puzzle is solvable.
+
+## 3. GAME MODES
+
+Create these game modes:
+
+### Classic Mode
+Progress through increasingly challenging color-sorting puzzles.
+
+### Time Challenge
+Complete puzzles before the timer expires.
+
+### Limited Moves
+Solve the puzzle using a restricted number of moves.
+
+### Daily Challenge
+Offer a special daily puzzle using a deterministic date-based seed. The same daily challenge should produce the same puzzle for all players where practical.
+
+### Zen Mode
+Relaxed sorting without timers or move restrictions.
+
+Build the architecture so additional modes can be introduced later.
+
+## 4. LEVEL SYSTEM
+
+Create at least 100 playable levels with progressive difficulty.
+
+Difficulty progression:
+
+Levels 1–10:
+- 3 to 4 colors.
+- 4 to 5 containers.
+- Simple introductory puzzles.
+
+Levels 11–25:
+- 4 to 5 colors.
+- More complex starting arrangements.
+- Introduce undo and hint mechanics.
+
+Levels 26–50:
+- 5 to 7 colors.
+- More containers.
+- Greater planning requirements.
+
+Levels 51–75:
+- 7 to 9 colors.
+- Complex arrangements.
+- Limited-move challenges.
+
+Levels 76–100:
+- Advanced puzzles.
+- More colors.
+- More strategic decisions.
+
+Do not generate random puzzles without validating solvability.
+
+Create a reliable puzzle generator or a curated level dataset with validation tests.
+
+## 5. PREMIUM VISUAL DESIGN
+
+Design a polished casual mobile game interface.
+
+Visual direction:
+- Vibrant colors.
+- Beautiful liquid effects.
+- Transparent glass containers.
+- Soft shadows.
+- Smooth gradients.
+- Rounded interface elements.
+- Premium typography.
+- Beautiful backgrounds.
+- Subtle particles.
+- Satisfying transitions.
+- Responsive layout.
+
+Suggested palette:
+- Background: #171B36
+- Purple: #9B72F2
+- Pink: #FF78B7
+- Blue: #59B8F5
+- Yellow: #FFD166
+- Green: #62D6A5
+- Orange: #FF9865
+- White: #FFFFFF
+
+Make the containers visually attractive with glass reflections, borders, highlights, and realistic-looking liquid surfaces.
+
+Do not use plain colored rectangles as the final container design.
+
+Do not use emoji as production artwork.
+
+## 6. REQUIRED SCREENS
+
+Build all screens:
+
+### Splash Screen
+- Sortopia logo.
+- Animated colorful liquid introduction.
+- Smooth transition.
+
+### Main Menu
+- Play button.
+- Continue button.
+- Game modes.
+- Daily challenge.
+- Achievements.
+- Settings.
+- Player level.
+- Coins and stars.
+- Beautiful animated background.
+
+### Level Selection
+- Level map.
+- Completed levels.
+- Locked levels.
+- Star ratings.
+- Current level highlight.
+
+### Gameplay Screen
+- Beautiful container arrangement.
+- Current level.
+- Move counter.
+- Timer when applicable.
+- Undo button.
+- Hint button.
+- Restart button.
+- Pause button.
+- Progress indicator.
+
+### Level Completion
+- Victory animation.
+- Stars earned.
+- Score.
+- Moves used.
+- Best score.
+- Next level button.
+
+### Game Over
+- Clear explanation.
+- Retry button.
+- Return to menu.
+
+### Daily Challenge
+- Daily puzzle.
+- Completion status.
+- Streak indicator.
+- Reward presentation.
+
+### Achievements
+- Completed levels.
+- Perfect solutions.
+- Daily challenge streaks.
+- Challenge achievements.
+
+### Settings
+- Music.
+- Sound effects.
+- Haptics where supported.
+- Accessibility preferences.
+- Credits.
+
+## 7. ANIMATIONS AND GAME FEEL
+
+This is a major priority.
+
+Implement:
+- Smooth liquid pouring.
+- Container selection animations.
+- Glass highlighting.
+- Liquid movement.
+- Bottle tilt and rotation.
+- Satisfying landing effects.
+- Particle effects.
+- Button press animations.
+- Level transition animations.
+- Victory celebration.
+- Star animations.
+- Subtle background motion.
+
+Liquid must visually move from the source container to the destination container.
+
+Do not simply change colors instantly.
+
+Animations must reflect the actual game state and remain interruptible or safely synchronized with input.
+
+## 8. REWARD SYSTEM
+
+Implement:
+- Coins.
+- Stars.
+- Level completion rewards.
+- Daily challenge rewards.
+- Achievement rewards.
+- Perfect-level bonuses.
+- Progression rewards.
+
+Avoid pay-to-win mechanics.
+
+The game should be enjoyable without requiring purchases or advertisements.
+
+Do not introduce monetization or external ad SDKs unless explicitly approved and supported by the platform.
+
+## 9. PUZZLE ENGINE
+
+Build a robust puzzle engine.
+
+Requirements:
+- Represent each container as an ordered stack of liquid units.
+- Validate source and destination.
+- Calculate legal pours.
+- Detect completed containers.
+- Detect level completion.
+- Prevent invalid moves.
+- Support undo history.
+- Support restart.
+- Support hints.
+- Save puzzle state safely.
+- Validate puzzle solvability.
+- Avoid accidental input during animations.
+
+Write automated tests for all game rules.
+
+Implement a solver or validation mechanism for generated puzzles. Never ship an impossible level.
+
+## 10. TECHNICAL ARCHITECTURE
+
+Use Phaser 3, TypeScript, and Vite.
+
+Recommended structure:
+
+src/
+  main.ts
+  config/
+  scenes/
+    BootScene.ts
+    PreloadScene.ts
+    SplashScene.ts
+    MainMenuScene.ts
+    LevelSelectionScene.ts
+    GameScene.ts
+    CompletionScene.ts
+    GameOverScene.ts
+    DailyChallengeScene.ts
+    SettingsScene.ts
+  systems/
+    PuzzleEngine.ts
+    PuzzleGenerator.ts
+    PuzzleSolver.ts
+    GameManager.ts
+    ProgressManager.ts
+    RewardManager.ts
+    AudioManager.ts
+    SaveManager.ts
+  entities/
+    Container.ts
+    Liquid.ts
+  components/
+  ui/
+  data/
+    levels/
+  integrations/
+    playables/
+  assets/
+  types/
+  utils/
+
+Keep the puzzle engine independent of Phaser rendering code.
+
+Keep levels data-driven.
+
+Create reusable container components and UI systems.
+
+Use strict TypeScript types.
+
+## 11. YOUTUBE PLAYABLES SDK
+
+Integrate the current official YouTube Playables SDK.
+
+Verify all API signatures using official documentation.
+
+Implement supported platform features:
+- Game readiness.
+- First-frame readiness where required.
+- Cloud save and progress restoration.
+- Pause/resume lifecycle.
+- Audio preferences.
+- Score reporting where supported.
+
+Keep SDK code in a dedicated adapter.
+
+Create a development mock for browser testing.
+
+Do not invent SDK methods.
+
+Do not use localStorage, cookies, or an external backend as substitutes for required Playables cloud saving.
+
+Do not claim certification or SDK compatibility without testing in the appropriate environment.
+
+## 12. RESPONSIVE DESIGN
+
+Support mobile portrait, mobile landscape where appropriate, tablets, and desktop browser development.
+
+Prioritize the target Playables viewport.
+
+Requirements:
+- Correct responsive scaling.
+- Touch-friendly container selection.
+- Large interaction areas.
+- No accidental page scrolling.
+- No clipped interface elements.
+- No overlapping controls.
+- Readable text.
+- Consistent layout across screen sizes.
+- Smooth performance.
+
+## 13. SOUND DESIGN
+
+Create original or properly licensed sounds:
+- Container selection.
+- Liquid pouring.
+- Liquid landing.
+- Undo.
+- Invalid move.
+- Level completion.
+- Button interactions.
+- Background music.
+
+Respect audio preferences and platform lifecycle requirements.
+
+## 14. TESTING
+
+Write automated tests for:
+- Valid moves.
+- Invalid moves.
+- Container capacity.
+- Matching colors.
+- Completed containers.
+- Puzzle completion.
+- Undo.
+- Restart.
+- Hint.
+- Puzzle generation.
+- Puzzle solvability.
+- Level unlocking.
+- Rewards.
+- Progress saving.
+
+Test the full journey:
+
+Splash → Main Menu → Level Selection → Gameplay → Puzzle Completion → Rewards → Next Level.
+
+Run type checking, unit tests, and production builds.
+
+Fix all critical errors.
+
+## 15. DEPLOYMENT
+
+Prepare:
+- Production Vite configuration.
+- Nginx configuration.
+- GitLab CI/CD pipeline.
+- Deployment documentation.
+- Asset optimization.
+- HTTPS deployment.
+
+Domain: games.mindgridlabs.org
+
+Build command:
+
+npm run build
+
+Production directory:
+
+dist/
+
+Deployment target: Linux + Nginx.
+
+## 16. DEVELOPMENT PROCESS
+
+First inspect the existing VS Code project.
+
+Preserve existing working code where appropriate.
+
+Then implement the project in milestones:
+
+1. Architecture and visual design system.
+2. Main menu and navigation.
+3. Container rendering and liquid animations.
+4. Puzzle engine and move validation.
+5. Level generator and solver.
+6. First 25 playable levels.
+7. Remaining 75 levels.
+8. Rewards, achievements, and daily challenge.
+9. Audio, animations, and visual polish.
+10. YouTube Playables SDK integration.
+11. Automated testing.
+12. Performance optimization and deployment.
+
+After each milestone:
+- Run tests.
+- Run type checking.
+- Fix discovered errors.
+- Test the actual gameplay.
+- Update documentation.
+
+Do not stop after writing a plan.
+
+Do not return only code snippets.
+
+Create and modify the actual project files.
+
+Do not replace production functionality with fake buttons or placeholder interactions.
+
+## 17. FINAL ACCEPTANCE CRITERIA
+
+The game is complete when:
+
+- All 100 levels are playable.
+- All puzzles are solvable.
+- Liquid pouring animations work.
+- Undo and restart work.
+- Hints work.
+- Level progression works.
+- Rewards work.
+- Daily challenge works.
+- All menus work.
+- Mobile touch interactions work.
+- The game has polished original visuals.
+- Audio works correctly.
+- Progress persistence follows platform requirements.
+- Playables SDK integration is verified.
+- Automated tests pass.
+- TypeScript checks pass.
+- Production build succeeds.
+- Deployment documentation is complete.
+
+## FINAL MISSION
+
+Build Sortopia as a premium, visually satisfying, highly replayable casual puzzle game.
+
+Think like a successful mobile game studio.
+
+Prioritize gameplay feel, visual quality, intuitive interactions, puzzle fairness, and performance.
+
+The final product must be a complete game that players genuinely enjoy—not a technical prototype.
+
+Start by inspecting the existing project and immediately begin implementation.

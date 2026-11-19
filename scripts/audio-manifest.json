@@ -1,0 +1,88 @@
+{
+  "_comment": "Every sound shipped in public/audio, where it came from, and how it is processed. All sources are CC0 (public domain). Rebuild with: npm run audio:build",
+  "sources": {
+    "kenney-interface": {
+      "url": "https://opengameart.org/sites/default/files/kenney_interfaceSounds.zip",
+      "page": "https://opengameart.org/content/interface-sounds",
+      "author": "Kenney (kenney.nl)",
+      "license": "CC0"
+    },
+    "kenney-jingles": {
+      "url": "https://opengameart.org/sites/default/files/jingleSounds_Kenney.zip",
+      "page": "https://opengameart.org/content/85-short-music-jingles",
+      "author": "Kenney (kenney.nl)",
+      "license": "CC0"
+    },
+    "rubberduck-water": {
+      "url": "https://opengameart.org/sites/default/files/water-splash-slime-sfx.zip",
+      "page": "https://opengameart.org/content/40-cc0-water-splash-slime-sfx",
+      "author": "rubberduck",
+      "license": "CC0"
+    },
+    "ezduzziteh-pop3": {
+      "url": "https://opengameart.org/sites/default/files/pop3.wav",
+      "page": "https://opengameart.org/content/pop-sounds-0",
+      "author": "EZduzziteh",
+      "license": "CC0"
+    },
+    "bmaczero-bubble2": {
+      "url": "https://opengameart.org/sites/default/files/bubbles-single2.wav",
+      "page": "https://opengameart.org/content/bubble-sound-effects",
+      "author": "BMacZero",
+      "license": "CC0"
+    },
+    "mintodog-ingame1": {
+      "url": "https://opengameart.org/sites/default/files/cozy_puzzle_in-game_1_bpm118.mp3",
+      "page": "https://opengameart.org/content/cozy-puzzle-in-game-1",
+      "author": "MintoDog",
+      "license": "CC0"
+    },
+    "mintodog-ingame3": {
+      "url": "https://opengameart.org/sites/default/files/cozy_puzzle_in-game_3_bpm108.mp3",
+      "page": "https://opengameart.org/content/cozy-puzzle-in-game-3",
+      "author": "MintoDog",
+      "license": "CC0"
+    },
+    "mintodog-stage-select": {
+      "url": "https://opengameart.org/sites/default/files/cozy_puzzle_stage_select_bpm100.mp3",
+      "page": "https://opengameart.org/content/cozy-puzzle-stage-select",
+      "author": "MintoDog",
+      "license": "CC0"
+    },
+    "isaiah658-ambient": {
+      "url": "https://opengameart.org/sites/default/files/Ambient-Loop-isaiah658.ogg",
+      "page": "https://opengameart.org/content/ambient-relaxing-loop",
+      "author": "isaiah658",
+      "license": "CC0"
+    }
+  },
+  "sfx": {
+    "select": { "source": "kenney-interface", "file": "glass_001.ogg" },
+    "deselect": { "source": "kenney-interface", "file": "glass_006.ogg" },
+    "click": { "source": "kenney-interface", "file": "click_002.ogg" },
+    "toggle": { "source": "kenney-interface", "file": "toggle_004.ogg" },
+    "invalid": { "source": "kenney-interface", "file": "error_004.ogg" },
+    "complete": { "source": "kenney-interface", "file": "confirmation_002.ogg" },
+    "star": { "source": "kenney-interface", "file": "confirmation_003.ogg" },
+    "whoosh": { "source": "kenney-interface", "file": "maximize_003.ogg" },
+    "undo": { "source": "kenney-interface", "file": "minimize_003.ogg" },
+    "hint": { "source": "kenney-interface", "file": "question_003.ogg" },
+    "reveal": { "source": "kenney-interface", "file": "pluck_002.ogg" },
+    "coin": { "source": "kenney-interface", "file": "glass_004.ogg" },
+    "land": { "source": "rubberduck-water", "file": "splash_09.ogg" },
+    "drip": { "source": "kenney-interface", "file": "drop_003.ogg" },
+    "pop": { "source": "ezduzziteh-pop3", "file": "pop3.wav" },
+    "bubble": { "source": "bmaczero-bubble2", "file": "bubbles-single2.wav" },
+    "stream": { "source": "rubberduck-water", "file": "loop_water_01.ogg", "loop": true },
+    "glug": { "source": "rubberduck-water", "file": "loop_bubbles_1.ogg", "loop": true },
+    "win": { "source": "kenney-jingles", "file": "jingles_PIZZA02.ogg" },
+    "levelup": { "source": "kenney-jingles", "file": "jingles_PIZZA10.ogg" },
+    "lose": { "source": "kenney-jingles", "file": "jingles_PIZZA01.ogg" }
+  },
+  "music": {
+    "music-menu": { "source": "mintodog-stage-select" },
+    "music-game-a": { "source": "mintodog-ingame1" },
+    "music-game-b": { "source": "mintodog-ingame3" },
+    "music-zen": { "source": "isaiah658-ambient" }
+  }
+}

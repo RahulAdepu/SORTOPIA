@@ -1,0 +1,39 @@
+Sortopia audio credits
+
+All audio is CC0 (public domain). Credit is not required but is given with thanks.
+
+Kenney (kenney.nl)  [CC0]
+  https://opengameart.org/content/interface-sounds
+  used for: select, deselect, click, toggle, invalid, complete, star, whoosh, undo, hint, reveal, coin, drip
+
+rubberduck  [CC0]
+  https://opengameart.org/content/40-cc0-water-splash-slime-sfx
+  used for: land, stream, glug
+
+EZduzziteh  [CC0]
+  https://opengameart.org/content/pop-sounds-0
+  used for: pop
+
+BMacZero  [CC0]
+  https://opengameart.org/content/bubble-sound-effects
+  used for: bubble
+
+Kenney (kenney.nl)  [CC0]
+  https://opengameart.org/content/85-short-music-jingles
+  used for: win, levelup, lose
+
+MintoDog  [CC0]
+  https://opengameart.org/content/cozy-puzzle-stage-select
+  used for: music-menu
+
+MintoDog  [CC0]
+  https://opengameart.org/content/cozy-puzzle-in-game-1
+  used for: music-game-a
+
+MintoDog  [CC0]
+  https://opengameart.org/content/cozy-puzzle-in-game-3
+  used for: music-game-b
+
+isaiah658  [CC0]
+  https://opengameart.org/content/ambient-relaxing-loop
+  used for: music-zen
