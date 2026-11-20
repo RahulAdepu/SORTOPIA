@@ -2,6 +2,7 @@ import '@fontsource/fredoka/500.css';
 import '@fontsource/fredoka/600.css';
 import '@fontsource/fredoka/700.css';
 import Phaser from 'phaser';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 import { deviceRatio } from './config/layout';
 import { COLORS } from './config/theme';
 import { SCENES } from './scenes';
@@ -24,6 +25,9 @@ function installVisibilityGuard(): void {
 }
 
 installVisibilityGuard();
+
+// Initialize Vercel Speed Insights
+injectSpeedInsights();
 
 const dpr = deviceRatio();
 
